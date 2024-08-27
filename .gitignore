@@ -2,6 +2,7 @@
 target
 clojure/*.edn
 .cpcache
+.repl-port
 master_ufo
 instance_ufo
 venv
@@ -13,3 +14,6 @@ distr/*/
 *.glyphs
 !FiraCode.glyphs
 
+.idea
+.fleet
+*.iml

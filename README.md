@@ -2,7 +2,7 @@
 
 ![Fira Code](./extras/logo.svg)
 
-Read in [Español](./LEEME.md) | [简体中文](./README_CN.md)
+Read in [Español](./LEEME.md) | [简体中文](./README_CN.md) | [日本語](./README_JA.md)
 
 ### Problem
 
@@ -56,7 +56,7 @@ Fira Code is not only about ligatures. Some fine-tuning is done for punctuation 
 
 <img src="./extras/typographics.png" width="754">
 
-Fira Code comes with a few different character variants, so that everyone can choose what’s best for them. [How to enable](https://github.com/tonsky/FiraCode/wiki/How-to-enable-stylistic-sets)
+Fira Code comes with a few different character variants (`cv01`, `cv02`, etc), stylistic sets (`ss01`, `ss02` , etc) and other font features (`zero`, `onum`, `calt`, etc), so that everyone can choose what’s best for them. [How to enable](https://github.com/tonsky/FiraCode/wiki/How-to-enable-stylistic-sets)
 
 <img src="./extras/character_variants.png" width="754">
 
@@ -91,25 +91,28 @@ Unicode coverage makes Fira Code a great choice for mathematical writing:
 
 | Works | Doesn’t work   |
 |-------|----------------|
-| **Abricotine** | **Arduino IDE** |
-| **Android Studio** (2.3+, [instructions](https://github.com/tonsky/FiraCode/wiki/IntelliJ-products-instructions)) | **Adobe Dreamweaver** |
-| **Anjuta** (unless at the EOF) | **Delphi IDE** |
-| **AppCode** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/IntelliJ-products-instructions)) | Standalone **Emacs** ([workaround](https://github.com/tonsky/FiraCode/wiki/Emacs-instructions)) |
-| **Atom** 1.1 or newer ([instructions](https://github.com/tonsky/FiraCode/wiki/Atom-instructions)) | **Godot** ([issue](https://github.com/godotengine/godot/issues/9961)) |
-| **BBEdit/TextWrangler** (v. 11 only, [instructions](https://github.com/tonsky/FiraCode/wiki/BBEdit-instructions)) | **IDLE** |
-| **Brackets** (with [this plugin](https://github.com/polo2ro/firacode-in-brackets)) | **KDevelop 4** |
-| **Chocolat** | **Monkey Studio IDE** |
-| **CLion** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/IntelliJ-products-instructions)) | **UltraEdit** |
+| **Arduino IDE** (2.0+,same instructions as [vscode](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)) | **Adobe Dreamweaver** |
+| **Abricotine** | **Delphi IDE** |
+| **Android Studio** (2.3+, [instructions](https://github.com/tonsky/FiraCode/wiki/IntelliJ-products-instructions)) | Standalone **Emacs** ([workaround](https://github.com/tonsky/FiraCode/wiki/Emacs-instructions)) |
+| **Anjuta** (unless at the EOF) |  **IDLE** |
+| **AppCode** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/IntelliJ-products-instructions)) | **KDevelop 4** |
+| **Atom** 1.1 or newer ([instructions](https://github.com/tonsky/FiraCode/wiki/Atom-instructions)) | **Monkey Studio IDE** |
+| **BBEdit** (14.6+ [instructions](https://github.com/tonsky/FiraCode/wiki/BBEdit-instructions)) | **UltraEdit** (Windows) |
+| **Brackets** (with [this plugin](https://github.com/polo2ro/firacode-in-brackets)) | 
+| **Chocolat** |
+| **CLion** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/IntelliJ-products-instructions)) | 
 | **Cloud9** ([instructions](https://github.com/tonsky/FiraCode/wiki/Cloud9-Instructions)) | 
 | **Coda 2** |
 | **CodeLite** |
 | **CodeRunner** |
+| **Comma** (Under: Preferences > Editor > Font) |
 | **CotEditor** |
 | **Eclipse** |
 | **elementary Code** |
 | **Geany** (1.37+) |
 | **gEdit / Pluma** |
 | **GNOME Builder** |
+| **Godot** |
 | **GoormIDE** ([instructions](https://github.com/tonsky/FiraCode/wiki/GoormIDE-Instructions)) |
 | **gVim** ([Windows](https://github.com/tonsky/FiraCode/issues/462), [GTK](https://vimhelp.org/options.txt.html#%27guiligatures%27)) |
 | **IntelliJ IDEA** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/IntelliJ-products-instructions)) |
@@ -128,7 +131,7 @@ Unicode coverage makes Fira Code a great choice for mathematical writing:
 | **NeoVim-gtk** |
 | **NetBeans** |
 | **Notepad** (Windows) |
-| **Notepad++** (with a [workaround](https://github.com/notepad-plus-plus/notepad-plus-plus/issues/2287#issuecomment-256638098))  |
+| **Notepad++** ([instructions](https://github.com/tonsky/FiraCode/issues/1555))  |
 | **Notepad3** ([instructions](https://github.com/rizonesoft/Notepad3/issues/361#issuecomment-365977420))|
 | **Nova** |
 | **PhpStorm** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/IntelliJ-products-instructions)) |
@@ -147,6 +150,7 @@ Unicode coverage makes Fira Code a great choice for mathematical writing:
 | **TextAdept** (Linux, macOS) |
 | **TextEdit** |
 | **TextMate 2** |
+| **UltraEdit (UEX)** (Linux) |
 | **VimR** ([instructions](https://github.com/qvacua/vimr/wiki#ligatures)) |
 | **Visual Studio** (2015+, [instructions](https://github.com/tonsky/FiraCode/wiki/Visual-Studio-Instructions)) |
 | **Visual Studio Code** ([instructions](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)) |
@@ -161,19 +165,22 @@ Unicode coverage makes Fira Code a great choice for mathematical writing:
 | Works | Doesn’t work |
 |-------|--------------|
 | crosh ([instructions](https://github.com/tonsky/FiraCode/wiki/ChromeOS-Terminal)) | Alacritty |
-| Hyper (see [#3607](https://github.com/vercel/hyper/issues/3607)) | Cmder |
-| iTerm 2 | ConEmu |
-| Kitty | GNOME Terminal |
-| Konsole | gtkterm ([ticket](https://gitlab.gnome.org/GNOME/vte/-/issues/1661)) |
-| Mintty | guake ([ticket](https://gitlab.gnome.org/GNOME/vte/-/issues/1661)) |
-| QTerminal | LXTerminal ([ticket](https://gitlab.gnome.org/GNOME/vte/-/issues/1661)) |
-| st ([patch](https://st.suckless.org/patches/ligatures/)) | mate-terminal |
+| Hyper (see [#3607](https://github.com/vercel/hyper/issues/3607)) | Asbru Connection Manager |
+| iTerm 2 | Cmder |
+| Kitty | ConEmu |
+| Konsole | GNOME Terminal ([ticket](https://gitlab.gnome.org/GNOME/vte/-/issues/192)) |
+| Mintty | gtkterm ([ticket](https://gitlab.gnome.org/GNOME/vte/-/issues/1661)) |
+| QTerminal | guake ([ticket](https://gitlab.gnome.org/GNOME/vte/-/issues/1661)) |
+| st ([patch](https://st.suckless.org/patches/ligatures/)) | LXTerminal ([ticket](https://gitlab.gnome.org/GNOME/vte/-/issues/1661)) |
+| Tabby | mate-terminal |
 | Terminal.app | PuTTY |
 | Termux | rxvt |
 | Token2Shell | sakura ([ticket](https://gitlab.gnome.org/GNOME/vte/-/issues/1661)) |
-| Wez’s terminal | Terminator ([ticket](https://gitlab.gnome.org/GNOME/vte/-/issues/1661)) |
-| Windows Terminal | terminology |
-| ZOC (macOS) | Windows Console |
+| Wez’s terminal | SecureCRT
+| Windows Terminal | Terminator ([ticket](https://gitlab.gnome.org/GNOME/vte/-/issues/1661)) |
+| ZOC (macOS) | terminology |
+| | Tilix |
+| | Windows Console |
 | | xfce4-terminal ([ticket](https://gitlab.gnome.org/GNOME/vte/-/issues/1661)) |
 | | xterm |
 | | ZOC (Windows) |
@@ -272,6 +279,9 @@ You can also limit the font weights that will be created with the `-w / --weight
 
 # or via a docker container (creates the family name 'Fira Code cv01 cv02 cv06 cv31 onum ss01 ss03 ss04 zero')
 docker run --rm -v "${PWD}":/opt tonsky/firacode:latest ./script/build.sh -f "cv01,cv02,cv06,ss01,zero,onum,ss03,ss04,cv31" -n "features"
+
+# in Git Bash from Git for Windows, or any other MSYS2 based shell, you might need to disable path conversion
+MSYS2_ARG_CONV_EXCL="*" docker run --rm -v "${PWD}":/opt tonsky/firacode:latest ./script/build.sh -f "ss02,ss03,ss04,ss05,ss06,ss07"
 ```
 
 ### Credits
