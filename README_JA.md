@@ -22,26 +22,6 @@ Fira Code は、一般的なプログラミングの複数文字の組み合わ�
 - [トラブルシューティング](https://github.com/tonsky/FiraCode/wiki#troubleshooting)
 - [ニュースとアップデート](https://twitter.com/FiraCode)
 
-### スポンサー
-
-Fira Code は個人的なフリータイムのプロジェクトで、資金はなく膨大な[機能リクエストバックログ](https://github.com/tonsky/FiraCode/issues)を抱えています。もし気に入っていただけたなら、[GitHub Sponsors](https://github.com/sponsors/tonsky) または [Patreon](https://patreon.com/tonsky) で開発をサポートすることを検討してください。どんな支援でもかまいません！
-
-大いに感謝します:
-
-<table>
-  <td align="center">
-    <a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=firacode&utm_source=github">
-      <div>
-        <img src="https://user-images.githubusercontent.com/629429/151508669-efb4c3b3-8fe3-45eb-8e47-e9510b5f0af1.svg" width="290" alt="WorkOS">
-      </div>
-      <b>Your app, enterprise-ready.</b>
-      <div>
-        <sub>Start selling to enterprise customers with just a few lines of code. Add Single Sign-On (and more) in minutes instead of months.</sup>
-      </div>
-    </a>
-  </td>
-</table>
-
 ### 何が入っているのでしょうか？
 
 左: Fira Code で描画される合字。右: 合字のない同じ文字列。

@@ -21,10 +21,6 @@ E então, consulte:
 - [Solução de problemas](https://github.com/tonsky/FiraCode/wiki#troubleshooting)
 - [Novidades e atualizações](https://twitter.com/FiraCode)
 
-### Patrocinadores
-
-Fira Code é um projeto pessoal, de tempo livre, sem financiamento, e com uma enorme [lista de solicitações de recursos](https://github.com/tonsky/FiraCode/issues). Se você gostou, considere apoiar seu desenvolvimento por meio do [GitHub Sponsors](https://github.com/sponsors/tonsky) ou [Patreon](https://patreon.com/tonsky). Qualquer ajuda é bem-vinda!
-
 ### O que o acompanha?
 
 À esquerda: as ligaduras conforme renderizadas no Fira Code. À direita: as mesmas sequências de caracteres sem ligaduras.

@@ -20,28 +20,6 @@ Fira Code是一种免费的等宽字体，包含常用的编程语言中多种�
 - [疑难解答](https://github.com/tonsky/FiraCode/wiki#troubleshooting)
 - [相关新闻](https://twitter.com/FiraCode)
 
-### 赞助商
-
-<a href="https://github.com/sponsors/tonsky" target="_blank"><img alt="Sponsor" src="./extras/sponsor.png"></a>
-
-Fira Code 是个人的空闲时间进行的项目，缺乏资金但有大量的 [功能请求积压](https://github.com/tonsky/FiraCode/issues)。如果你也热爱这个项目, 请考虑通过 [GitHub Sponsors](https://github.com/sponsors/tonsky) 或 [Patreon](https://patreon.com/tonsky) 来支持它的发展。任何帮助都很重要！
-
-非常感谢：
-
-<table>
-  <td align="center">
-    <a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=firacode&utm_source=github">
-      <div>
-        <img src="https://user-images.githubusercontent.com/629429/151508669-efb4c3b3-8fe3-45eb-8e47-e9510b5f0af1.svg" width="290" alt="WorkOS">
-      </div>
-      <b>Your app, enterprise-ready.</b>
-      <div>
-        <sub>Start selling to enterprise customers with just a few lines of code. Add Single Sign-On (and more) in minutes instead of months.</sup>
-      </div>
-    </a>
-  </td>
-</table>
-
 ### 字体里都有哪些特征?
 
 左侧：Fira Code中呈现的连字。右侧：没有连字的相同字符序列。

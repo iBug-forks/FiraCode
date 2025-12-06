@@ -22,10 +22,6 @@ Then:
 - [Troubleshooting](https://github.com/tonsky/FiraCode/wiki#troubleshooting)
 - [News & Updates](https://twitter.com/FiraCode)
 
-### Sponsors
-
-Fira Code is a personal, free-time project with no funding and a huge [feature request backlog](https://github.com/tonsky/FiraCode/issues). If you love it, consider supporting its development via [GitHub Sponsors](https://github.com/sponsors/tonsky) or [Patreon](https://patreon.com/tonsky). Any help counts!
-
 ### What’s in the box?
 
 Left: ligatures as rendered in Fira Code. Right: same character sequences without ligatures.
