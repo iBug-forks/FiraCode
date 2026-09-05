@@ -21,8 +21,20 @@ for feat in "$@"; do
 	code_blocks+=("$(tr '\n' ' ' <<< "${code}")")
 done
 
-# code block is one line above name declaration
-linenum=$(sed -n "/tag = calt;/=" "${glyphs_file}")
-linenum=$((linenum - 1))
-# replace end of line (";) with code on specified line number
-sed -i -e "${linenum}s@\";\$@\n${code_blocks[*]}\";@" "${glyphs_file}"
+# Keep baked substitutions out of `calt`. Applications commonly disable that
+# feature with their "Enable ligatures" setting, which used to disable the
+# supposedly baked-in variants as well. `rclt` (required contextual alternates)
+# is enabled by default independently of optional ligature settings.
+#
+# Insert the feature after `calt`, rather than before it, so substitutions that
+# target glyphs produced by Fira Code's contextual pipeline can still run.
+calt_tag_line=$(sed -n "/tag = calt;/=" "${glyphs_file}")
+tmp_file=$(mktemp)
+
+{
+	head -n "$((calt_tag_line + 1))" "${glyphs_file}"
+	printf '{\ncode = "%s";\ntag = rclt;\n},\n' "${code_blocks[*]}"
+	tail -n "+$((calt_tag_line + 2))" "${glyphs_file}"
+} > "${tmp_file}"
+
+mv "${tmp_file}" "${glyphs_file}"
