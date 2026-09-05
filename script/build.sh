@@ -3,6 +3,7 @@ set -o errexit -o pipefail
 cd "$(dirname "$0")"
 
 features=()
+default_features=()
 weights=()
 gen_glyphs_file_only=0
 use_features_for_family_name=0
@@ -25,6 +26,12 @@ while [ $# -gt 0 ]; do
 			check_required_args "$1" "$2" || exit 1
 			# turn comma separated list into sorted array
 			IFS=',' read -r -a features <<< "$(echo "$2" | tr ',' '\n' | sort -u | tr '\n' ',')"
+			shift 2 # remove two params (flag + arg)
+			;;
+		--default-features)
+			check_required_args "$1" "$2" || exit 1
+			# turn comma separated list into sorted array
+			IFS=',' read -r -a default_features <<< "$(echo "$2" | tr ',' '\n' | sort -u | tr '\n' ',')"
 			shift 2 # remove two params (flag + arg)
 			;;
 		-w | --weights)
@@ -65,11 +72,23 @@ export FIRACODE_GLYPHS_FILE
 cp ../FiraCode.glyphs "${FIRACODE_GLYPHS_FILE}"
 
 feat_string=""
+if [ -n "${features[*]}" ] && [ -n "${default_features[*]}" ]; then
+	echo "Error: --features and --default-features cannot be used together" >&2
+	exit 1
+fi
+
 if [ -n "${features[*]}" ]; then
 	echo "Creating font with these features: ${features[*]}"
 	./bake_in_features.sh "${features[@]}"
 
 	feat_string=" ${features[*]}"
+fi
+
+if [ -n "${default_features[*]}" ]; then
+	echo "Creating font with these default glyphs: ${default_features[*]}"
+	./bake_default_features.py "${default_features[@]}"
+
+	feat_string=" ${default_features[*]}"
 fi
 
 if [ "${use_features_for_family_name}" -ne 0 ]; then

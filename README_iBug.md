@@ -11,6 +11,13 @@ not the optional `calt` feature used for Fira Code's programming ligatures.
 They therefore remain active when an application turns off "Enable Ligatures".
 The ligature setting still controls the programming ligatures themselves.
 
+To replace the default glyph drawings themselves, without depending on either
+`rclt` or `calt`, use `--default-features` instead:
+
+```sh
+docker run -u 1000 -i --rm -v "${PWD}":/opt firacode-ibug-local ./script/build.sh --default-features cv02,cv10,cv16,cv29,ss01,ss03,ss05,zero --family-name "Fira Code iBug New"
+```
+
 ## Diff command
 
 ```sh
